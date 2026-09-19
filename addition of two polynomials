@@ -1,0 +1,20 @@
+# Addition of two polynomials
+
+p1 = [3, 2, 5]       # 3x^2 + 2x + 5
+p2 = [4, 3, 1]       # 4x^2 + 3x + 1
+
+# Make both lists the same length
+n = max(len(p1), len(p2))
+
+p1 += [0] * (n - len(p1))
+p2 += [0] * (n - len(p2))
+
+# Add corresponding coefficients
+result = []
+
+for i in range(n):
+    result.append(p1[i] + p2[i])
+
+print("First polynomial :", p1)
+print("Second polynomial:", p2)
+print("Sum              :", result)
