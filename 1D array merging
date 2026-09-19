@@ -1,0 +1,6 @@
+arr1 = [10, 20, 30]
+arr2 = [40, 50, 60]
+
+merged = arr1 + arr2
+
+print("Merged array:", merged)
