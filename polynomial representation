@@ -1,0 +1,14 @@
+# Polynomial: 3x^4 - 2x^3 + 5x - 7
+
+coefficients = [3, -2, 0, 5, -7]
+
+print("Polynomial coefficients:", coefficients)
+
+# Evaluate polynomial for a given x
+x = 2
+result = 0
+
+for coefficient in coefficients:
+    result = result * x + coefficient
+
+print("Value of polynomial at x =", x, ":", result)
